@@ -3,5 +3,15 @@ machine:
   services:
     - docker
 dependencies:
+  pre:
+    - docker info
+    - test/clone_samplecode.sh
 test:
+  override:
+    - test/test.sh 7.0
+    - test/test.sh 7.1
 deployment:
+  release:
+    branch: master
+    commands:
+      - test/push_image_to_hub.sh
