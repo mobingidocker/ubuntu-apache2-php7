@@ -33,14 +33,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -fr /var/lib/apt/lists/*
 
 RUN a2enmod rewrite
-COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY conf/000-default.conf /etc/apache2/sites-available/000-default.conf
 
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-COPY run.sh /run.sh
+COPY script/run.sh /run.sh
 RUN chmod 755 /run.sh
 
-COPY config /config
+COPY conf/config /config
 
 
 EXPOSE 80
