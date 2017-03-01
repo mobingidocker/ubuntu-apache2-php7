@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		php7.1-mysql \
 		php7.1-pgsql \
 		php7.1-pspell \
+		php7.1-xml \
 		php7.1-xmlrpc \
 		php-apcu \
 		php-memcached \
