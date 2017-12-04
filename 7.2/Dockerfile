@@ -20,7 +20,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		php7.2-gd \
 		php7.2-imap \
 		php7.2-mbstring \
-		php7.2-mcrypt \
 		php7.2-mysql \
 		php7.2-pgsql \
 		php7.2-pspell \
