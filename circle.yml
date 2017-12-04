@@ -10,6 +10,7 @@ test:
   override:
     - test/test.sh 7.0
     - test/test.sh 7.1
+    - test/test.sh 7.2
 deployment:
   release:
     branch: master
