@@ -30,6 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		php-memcached \
 		php-pear \
 		php-redis \
+		php-bcmath \
 	&& apt-get clean \
 	&& rm -fr /var/lib/apt/lists/*
 
