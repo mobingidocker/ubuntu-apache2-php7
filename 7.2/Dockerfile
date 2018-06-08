@@ -14,6 +14,7 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		libapache2-mod-php7.2 \
 		php7.2 \
+		php7.2-bcmath \
 		php7.2-cli \
 		php7.2-curl \
 		php7.2-dev \
@@ -29,7 +30,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		php-memcached \
 		php-pear \
 		php-redis \
-		php-bcmath \
 	&& apt-get clean \
 	&& rm -fr /var/lib/apt/lists/*
 
